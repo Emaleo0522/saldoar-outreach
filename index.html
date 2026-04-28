@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Outreach forms — Saldoar</title>
+<title>Outreach forms — Saldoar (Nueva ola)</title>
 <style>
   * { box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
   body {
@@ -17,6 +17,7 @@
     line-height: 1.5;
   }
   h1 { color: #10b981; margin: 0 0 6px; font-size: 1.7rem; }
+  h2.section-title { color: #374151; margin: 32px 0 14px; font-size: 1.1rem; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; }
   .lead { color: #666; margin-bottom: 22px; font-size: 0.95rem; }
   .provider {
     background: #fff;
@@ -42,7 +43,7 @@
     font-weight: 600;
     vertical-align: middle;
   }
-  .wave.w2 { background: #fef3c7; color: #92400e; }
+  .wave.w3 { background: #fef3c7; color: #92400e; }
   .open-form {
     display: inline-block;
     background: #10b981;
@@ -123,50 +124,55 @@
 </head>
 <body>
 
-<h1>Outreach forms — 1era ola</h1>
-<div class="lead">6 providers listos para contactar. Abrí cada form, copiá los campos y enviá.</div>
+<h1>Outreach forms — Nueva ola</h1>
+<div class="lead">15 liquidity providers para contactar (9 de 2da ola + 6 de 3era ola). Yativo ya integrado; Koywe en conversación.</div>
 
 <div class="info">
   <b>Flujo:</b> hacé clic en "Abrir formulario" → copiá cada campo con el botón "Copiar" → pegalo en el campo correspondiente del form → enviá → marcá el provider como <code>contacted</code> en Notion con la fecha.
 </div>
 
-<!-- LOCALPAYMENT -->
+<h2 class="section-title">2da ola — Alta prioridad (9)</h2>
+
+<!-- DLOCAL -->
 <div class="provider">
-  <h2>1. LocalPayment (Aleph) <span class="wave">1era ola</span></h2>
-  <a class="open-form" href="https://localpayment.com/#form" target="_blank">Abrir formulario →</a>
-  <div class="note">Form con dropdown — elegí <b>"Sales"</b>. Tiene hCaptcha: vas a tener que resolverlo al enviar.</div>
+  <h2>1. dLocal <span class="wave">2da ola</span></h2>
+  <a class="open-form" href="https://dlocal.com/contact-us/" target="_blank">Abrir formulario →</a>
+  <div class="note">Líder LATAM B2B (UY-based, NASDAQ DLO). 40+ países, virtual accounts.</div>
   <div class="fields">
     <div class="field">
       <label>Nombre</label>
-      <div class="val" id="lp-name">Leonardo Mansilla</div>
-      <button class="copy" data-target="lp-name">Copiar</button>
+      <div class="val" id="dl-name">Leonardo Mansilla</div>
+      <button class="copy" data-target="dl-name">Copiar</button>
     </div>
     <div class="field">
       <label>Email</label>
-      <div class="val" id="lp-email">emanuel@saldoar.com</div>
-      <button class="copy" data-target="lp-email">Copiar</button>
+      <div class="val" id="dl-email">emanuel@saldoar.com</div>
+      <button class="copy" data-target="dl-email">Copiar</button>
     </div>
     <div class="field">
       <label>Empresa</label>
-      <div class="val" id="lp-company">Saldoar</div>
-      <button class="copy" data-target="lp-company">Copiar</button>
+      <div class="val" id="dl-company">Saldoar</div>
+      <button class="copy" data-target="dl-company">Copiar</button>
     </div>
     <div class="field">
       <label>Cargo</label>
-      <div class="val" id="lp-role">Product Manager</div>
-      <button class="copy" data-target="lp-role">Copiar</button>
+      <div class="val" id="dl-role">Product Manager</div>
+      <button class="copy" data-target="dl-role">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Website</label>
+      <div class="val" id="dl-web">saldoar.com</div>
+      <button class="copy" data-target="dl-web">Copiar</button>
     </div>
     <div class="field">
       <label>Mensaje</label>
-      <pre class="val" id="lp-msg">Hola equipo de LocalPayment,
+      <pre class="val" id="dl-msg">Hola equipo de dLocal,
 
-Soy Leonardo, Product Manager en Saldoar.
+Soy Leonardo, Product Manager en Saldoar — fintech LATAM que permite a miles de latinoamericanos enviar, recibir e intercambiar dinero digital, con transacciones de USD 5 a USD 1.000.
 
-Saldoar es una empresa de tecnología financiera que permite a miles de latinoamericanos, todos los días, enviar, recibir e intercambiar dinero digital. Como parte de nuestro plan de expansión estamos incorporando nuevos países, con un volumen de transacciones que va de USD 5 a USD 1.000.
+Nos interesa explorar dLocal por su modelo de virtual accounts y cobertura LATAM (40+ países). Valoramos especialmente modelos basados en identificadores reutilizables que encajen con un flujo transaccional de cobros y pagos, más que esquemas de cuentas multimoneda por usuario final.
 
-Nos interesa explorar su servicio para integrar payin y payout vía API en múltiples países —nos atrae especialmente la amplitud de cobertura LATAM que ofrecen (17 países). Valoramos modelos basados en identificadores reutilizables (QR, virtual accounts, etc.) que encajen con un flujo transaccional de cobros y pagos, más que esquemas de cuentas multimoneda por usuario final.
-
-En Saldoar somos crypto-friendly: valoramos cripto y stablecoins como moneda base de balance, lo que nos da flexibilidad para integrarnos con proveedores que operen en FIAT, cripto o ambos. Adicionalmente, ya contamos con un proceso de KYC biométrico vía Veriff.
+En Saldoar somos crypto-friendly: stablecoins como moneda base de balance, con flexibilidad para integrarnos en FIAT, cripto o ambos. Ya contamos con KYC biométrico vía Veriff.
 
 ¿Podríamos coordinar una llamada de 20-30 minutos esta semana o la próxima?
 
@@ -174,222 +180,646 @@ Saludos,
 Leonardo Mansilla
 Product Manager - Saldoar
 emanuel@saldoar.com</pre>
-      <button class="copy" data-target="lp-msg">Copiar</button>
+      <button class="copy" data-target="dl-msg">Copiar</button>
     </div>
   </div>
 </div>
 
-<!-- BAMBOO -->
+<!-- BITSO -->
 <div class="provider">
-  <h2>2. Bamboo Payments <span class="wave">1era ola</span></h2>
-  <a class="open-form" href="https://bamboopaymentsystems.com/contact-sales/" target="_blank">Abrir formulario →</a>
+  <h2>2. Bitso Business / Alpha <span class="wave">2da ola</span></h2>
+  <a class="open-form" href="https://bitso.com/business" target="_blank">Abrir bitso.com/business →</a>
+  <div class="note">Producto Alpha es B2B institucional puro (no retail). Email alternativo: institutional@bitso.com</div>
   <div class="fields">
     <div class="field">
       <label>Nombre</label>
-      <div class="val" id="bb-name">Leonardo Mansilla</div>
-      <button class="copy" data-target="bb-name">Copiar</button>
+      <div class="val" id="bt-name">Leonardo Mansilla</div>
+      <button class="copy" data-target="bt-name">Copiar</button>
     </div>
     <div class="field">
       <label>Email</label>
-      <div class="val" id="bb-email">emanuel@saldoar.com</div>
-      <button class="copy" data-target="bb-email">Copiar</button>
+      <div class="val" id="bt-email">emanuel@saldoar.com</div>
+      <button class="copy" data-target="bt-email">Copiar</button>
     </div>
     <div class="field">
       <label>Empresa</label>
-      <div class="val" id="bb-company">Saldoar</div>
-      <button class="copy" data-target="bb-company">Copiar</button>
+      <div class="val" id="bt-company">Saldoar</div>
+      <button class="copy" data-target="bt-company">Copiar</button>
     </div>
     <div class="field">
       <label>Cargo</label>
-      <div class="val" id="bb-role">Product Manager</div>
-      <button class="copy" data-target="bb-role">Copiar</button>
-    </div>
-    <div class="field">
-      <label>Website</label>
-      <div class="val" id="bb-web">saldoar.com</div>
-      <button class="copy" data-target="bb-web">Copiar</button>
+      <div class="val" id="bt-role">Product Manager</div>
+      <button class="copy" data-target="bt-role">Copiar</button>
     </div>
     <div class="field">
       <label>Mensaje</label>
-      <pre class="val" id="bb-msg">Hi Bamboo team,
+      <pre class="val" id="bt-msg">Hola equipo de Bitso,
 
-I'm Leonardo, Product Manager at Saldoar.
+Soy Leonardo, Product Manager en Saldoar — fintech crypto-friendly LATAM para envío e intercambio de dinero digital, con transacciones de USD 5 a USD 1.000.
 
-Saldoar is a financial technology company that enables thousands of Latin Americans every day to send, receive, and exchange digital money. As part of our expansion plan we are onboarding new countries, with transactions ranging from USD 5 to USD 1,000.
+Nos interesa específicamente Bitso Alpha por su enfoque institucional crypto-fiat con on/off-ramp via API a CLABE (MX), CBU (AR), PIX (BR) y PSE (CO). Saldoar usa stablecoins como moneda base de balance, lo que hace que la liquidez crypto-nativa de Bitso sea un fit directo. Ya tenemos KYC biométrico vía Veriff.
 
-We'd love to explore your service for payin and payout integration via API across multiple countries — we're particularly drawn by your 7-country LATAM coverage (including Uruguay), 24/7 real-time processing and your recent EU license. We particularly value models based on reusable identifiers (QR, virtual accounts, etc.) that fit a transactional collect-and-pay flow, rather than multi-currency per-user account schemes.
+Valoramos especialmente modelos transaccionales con identificadores reutilizables, no cuenta-por-usuario.
 
-At Saldoar we are crypto-friendly: we value crypto and stablecoins as a base balance currency, which gives us flexibility to integrate with providers operating in FIAT, crypto, or both. We also already have a biometric KYC process in place via Veriff.
-
-Would you have availability for a 20-30 minute call this or next week?
-
-Best,
-Leonardo Mansilla
-Product Manager - Saldoar
-emanuel@saldoar.com</pre>
-      <button class="copy" data-target="bb-msg">Copiar</button>
-    </div>
-  </div>
-</div>
-
-<!-- KOYWE -->
-<div class="provider">
-  <h2>3. Koywe <span class="wave">1era ola</span></h2>
-  <a class="open-form" href="https://koywe.com/es/book-demo" target="_blank">Abrir "Agendar demo" →</a>
-  <div class="note">Koywe solo tiene booking de demo (no form de partnership). En el campo de "qué te interesa" o "mensaje" pegá el texto de abajo.</div>
-  <div class="fields">
-    <div class="field">
-      <label>Nombre</label>
-      <div class="val" id="kw-name">Leonardo Mansilla</div>
-      <button class="copy" data-target="kw-name">Copiar</button>
-    </div>
-    <div class="field">
-      <label>Email</label>
-      <div class="val" id="kw-email">emanuel@saldoar.com</div>
-      <button class="copy" data-target="kw-email">Copiar</button>
-    </div>
-    <div class="field">
-      <label>Empresa</label>
-      <div class="val" id="kw-company">Saldoar</div>
-      <button class="copy" data-target="kw-company">Copiar</button>
-    </div>
-    <div class="field">
-      <label>Mensaje</label>
-      <pre class="val" id="kw-msg">Hola equipo de Koywe,
-
-Soy Leonardo, Product Manager en Saldoar — una fintech LATAM de envío/intercambio de dinero digital, con transacciones que van de USD 5 a USD 1.000.
-
-Nos interesa Koywe por su modelo de KYC delegable al merchant, sus stablecoins nativas (USDC/USDT) y su licencia CMF. Valoramos modelos basados en identificadores reutilizables (QR, virtual accounts) que encajen con un flujo transaccional de cobros y pagos, más que esquemas de cuentas multimoneda por usuario final.
-
-En Saldoar somos crypto-friendly: valoramos cripto y stablecoins como moneda base de balance, lo que nos da flexibilidad para integrarnos en FIAT, cripto o ambos. Ya contamos con KYC biométrico propio vía Veriff.
-
-Agradecería una demo o reunión de 20-30 minutos para explorar el fit.
+¿Podemos coordinar una llamada de 20-30 minutos para evaluar el fit?
 
 Saludos,
 Leonardo Mansilla
 Product Manager - Saldoar
 emanuel@saldoar.com</pre>
-      <button class="copy" data-target="kw-msg">Copiar</button>
+      <button class="copy" data-target="bt-msg">Copiar</button>
     </div>
   </div>
 </div>
 
-<!-- WISE -->
+<!-- CONDUIT -->
 <div class="provider">
-  <h2>4. Wise Business <span class="wave">1era ola</span></h2>
-  <a class="open-form" href="https://wise.com/gb/business/contact" target="_blank">Abrir formulario →</a>
+  <h2>3. Conduit <span class="wave">2da ola</span></h2>
+  <a class="open-form" href="https://getconduit.com" target="_blank">Abrir getconduit.com →</a>
+  <div class="note">Stablecoin payouts: USDC → moneda local LATAM (PIX, SPEI, CBU, PSE). Match directo con modelo Saldoar.</div>
   <div class="fields">
     <div class="field">
       <label>Nombre</label>
-      <div class="val" id="w-name">Leonardo Mansilla</div>
-      <button class="copy" data-target="w-name">Copiar</button>
+      <div class="val" id="co-name">Leonardo Mansilla</div>
+      <button class="copy" data-target="co-name">Copiar</button>
     </div>
     <div class="field">
       <label>Email</label>
-      <div class="val" id="w-email">emanuel@saldoar.com</div>
-      <button class="copy" data-target="w-email">Copiar</button>
+      <div class="val" id="co-email">emanuel@saldoar.com</div>
+      <button class="copy" data-target="co-email">Copiar</button>
     </div>
     <div class="field">
       <label>Empresa</label>
-      <div class="val" id="w-company">Saldoar</div>
-      <button class="copy" data-target="w-company">Copiar</button>
+      <div class="val" id="co-company">Saldoar</div>
+      <button class="copy" data-target="co-company">Copiar</button>
     </div>
     <div class="field">
       <label>Cargo</label>
-      <div class="val" id="w-role">Product Manager</div>
-      <button class="copy" data-target="w-role">Copiar</button>
+      <div class="val" id="co-role">Product Manager</div>
+      <button class="copy" data-target="co-role">Copiar</button>
     </div>
     <div class="field">
       <label>Mensaje</label>
-      <pre class="val" id="w-msg">Hi Wise Business team,
+      <pre class="val" id="co-msg">Hi Conduit team,
 
-I'm Leonardo, Product Manager at Saldoar — a fintech that enables thousands of Latin Americans to send, receive, and exchange digital money daily. As part of our expansion plan we're onboarding new countries, with transactions ranging from USD 5 to USD 1,000.
+I'm Leonardo, Product Manager at Saldoar — a crypto-friendly LATAM fintech for sending, receiving, and exchanging digital money, with transactions ranging from USD 5 to USD 1,000.
 
-We'd love to explore Wise Business as a liquidity partner for our expansion across LATAM. We particularly value models based on reusable identifiers (QR, virtual accounts, etc.) that fit a transactional collect-and-pay flow, rather than multi-currency per-user account schemes.
+We're particularly interested in your USDC → local currency payouts model (PIX, SPEI, CBU, PSE) — a direct match for our stablecoin-first treasury. We value transactional collect-and-pay flows with reusable identifiers, rather than multi-currency per-user account schemes. We already have biometric KYC via Veriff.
 
-At Saldoar we are crypto-friendly: we value crypto and stablecoins as a base balance currency, which gives us flexibility to integrate with providers operating in FIAT, crypto, or both. We also already have a biometric KYC process in place via Veriff.
-
-Would you have 20-30 minutes this or next week to discuss fit?
+Could we schedule a 20-30 minute demo to explore the fit?
 
 Best,
 Leonardo Mansilla
 Product Manager - Saldoar
 emanuel@saldoar.com</pre>
-      <button class="copy" data-target="w-msg">Copiar</button>
+      <button class="copy" data-target="co-msg">Copiar</button>
     </div>
   </div>
 </div>
 
-<!-- MERCADOPAGO -->
+<!-- MANTECA -->
 <div class="provider">
-  <h2>5. MercadoPago <span class="wave">1era ola</span></h2>
-  <a class="open-form" href="https://centrodepartners.mercadolibre.com.ar" target="_blank">Abrir Centro de Partners →</a>
-  <div class="note">MP no tiene un form directo de contacto comercial. Opciones: (1) registrarte en Centro de Partners, (2) sumarte al Discord oficial. La comunicación inicial puede ser menos formal.</div>
+  <h2>4. Manteca <span class="wave">2da ola</span></h2>
+  <a class="open-form" href="https://manteca.dev" target="_blank">Abrir manteca.dev →</a>
+  <div class="note">Argentina-only, crypto liquidity B2B. Cubre el corredor argentino que Yativo no atiende. Founders accesibles via redes — alternativa a form: contacto directo Twitter/Telegram.</div>
   <div class="fields">
     <div class="field">
-      <label>Mensaje (Discord o form)</label>
-      <pre class="val" id="mp-msg">Hola equipo de MercadoPago Developers,
+      <label>Nombre</label>
+      <div class="val" id="mt-name">Leonardo Mansilla</div>
+      <button class="copy" data-target="mt-name">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Email</label>
+      <div class="val" id="mt-email">emanuel@saldoar.com</div>
+      <button class="copy" data-target="mt-email">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Empresa</label>
+      <div class="val" id="mt-company">Saldoar</div>
+      <button class="copy" data-target="mt-company">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Mensaje</label>
+      <pre class="val" id="mt-msg">Hola equipo de Manteca,
 
-Soy Leonardo, Product Manager en Saldoar — una fintech LATAM que permite enviar, recibir e intercambiar dinero digital, con transacciones que van de USD 5 a USD 1.000.
+Soy Leonardo, Product Manager en Saldoar — fintech crypto-friendly LATAM (envío/intercambio de dinero digital, transacciones USD 5 a USD 1.000).
 
-Estamos explorando MercadoPago como proveedor de liquidez regional por su cobertura en 18 países. Valoramos modelos basados en identificadores reutilizables (QR, virtual accounts, etc.) que encajen con un flujo transaccional de cobros y pagos, más que esquemas de cuentas multimoneda por usuario final.
+Nos interesa específicamente Manteca para cubrir el corredor argentino con su API USDT/USDC ↔ ARS y CVU virtual. Saldoar usa stablecoins como moneda base, así que su modelo es match directo. Ya tenemos KYC biométrico vía Veriff y valoramos que ustedes acepten KYC delegado.
 
-En Saldoar somos crypto-friendly: valoramos cripto y stablecoins como moneda base de balance, con flexibilidad para integrarnos en FIAT, cripto o ambos. Ya contamos con KYC biométrico propio vía Veriff.
-
-¿A quién podría contactar del lado comercial/partnerships para agendar una llamada inicial?
+¿Podemos coordinar una llamada de 20-30 minutos para evaluar la integración?
 
 Saludos,
 Leonardo Mansilla
 Product Manager - Saldoar
 emanuel@saldoar.com</pre>
-      <button class="copy" data-target="mp-msg">Copiar</button>
+      <button class="copy" data-target="mt-msg">Copiar</button>
     </div>
   </div>
 </div>
 
-<!-- STRIPE -->
+<!-- POMELO -->
 <div class="provider">
-  <h2>6. Stripe Connect <span class="wave">1era ola</span></h2>
-  <a class="open-form" href="https://stripe.com/contact/sales" target="_blank">Abrir Stripe Sales →</a>
-  <div class="note">Stripe tiene un flujo de contacto por producto. Elegí "Connect" si el form lo permite.</div>
+  <h2>5. Pomelo <span class="wave">2da ola</span></h2>
+  <a class="open-form" href="https://pomelo.la" target="_blank">Abrir pomelo.la →</a>
+  <div class="note">BaaS regional fundado en AR. Cubre Argentina (gap Yativo) + 5 LATAM más.</div>
   <div class="fields">
     <div class="field">
       <label>Nombre</label>
-      <div class="val" id="s-name">Leonardo Mansilla</div>
-      <button class="copy" data-target="s-name">Copiar</button>
+      <div class="val" id="pm-name">Leonardo Mansilla</div>
+      <button class="copy" data-target="pm-name">Copiar</button>
     </div>
     <div class="field">
       <label>Email</label>
-      <div class="val" id="s-email">emanuel@saldoar.com</div>
-      <button class="copy" data-target="s-email">Copiar</button>
+      <div class="val" id="pm-email">emanuel@saldoar.com</div>
+      <button class="copy" data-target="pm-email">Copiar</button>
     </div>
     <div class="field">
       <label>Empresa</label>
-      <div class="val" id="s-company">Saldoar</div>
-      <button class="copy" data-target="s-company">Copiar</button>
+      <div class="val" id="pm-company">Saldoar</div>
+      <button class="copy" data-target="pm-company">Copiar</button>
     </div>
     <div class="field">
-      <label>Website</label>
-      <div class="val" id="s-web">saldoar.com</div>
-      <button class="copy" data-target="s-web">Copiar</button>
+      <label>Cargo</label>
+      <div class="val" id="pm-role">Product Manager</div>
+      <button class="copy" data-target="pm-role">Copiar</button>
     </div>
     <div class="field">
       <label>Mensaje</label>
-      <pre class="val" id="s-msg">Hi Stripe Sales team,
+      <pre class="val" id="pm-msg">Hola equipo de Pomelo,
 
-I'm Leonardo, Product Manager at Saldoar — a LATAM fintech for sending, receiving, and exchanging digital money. As part of our expansion plan we're onboarding new countries, with transactions ranging from USD 5 to USD 1,000.
+Soy Leonardo, Product Manager en Saldoar — fintech LATAM para envío/intercambio de dinero digital, con transacciones de USD 5 a USD 1.000.
 
-We're exploring Stripe Connect for payin and payout across our target markets. We particularly value models based on reusable identifiers (QR, virtual accounts, etc.) that fit a transactional collect-and-pay flow, rather than multi-currency per-user account schemes.
+Buscamos un partner BaaS con cobertura Argentina + LATAM y API moderna para emisión, cuentas y payouts. Valoramos identificadores reutilizables y modelo transaccional, no cuenta-por-usuario obligatoria. Somos crypto-friendly (stablecoins como balance) y ya tenemos KYC biométrico vía Veriff.
 
-At Saldoar we are crypto-friendly: we value crypto and stablecoins as a base balance currency, which gives us flexibility to integrate with providers operating in FIAT, crypto, or both. We also already have a biometric KYC process in place via Veriff.
+¿Podemos coordinar una llamada de 20-30 minutos con su equipo de sales LATAM?
 
-Could we set up a 20-30 min call to explore a fit? Particularly interested in Connect Custom and LATAM coverage specifics.
+Saludos,
+Leonardo Mansilla
+Product Manager - Saldoar
+emanuel@saldoar.com</pre>
+      <button class="copy" data-target="pm-msg">Copiar</button>
+    </div>
+  </div>
+</div>
+
+<!-- INSWITCH -->
+<div class="provider">
+  <h2>6. Inswitch <span class="wave">2da ola</span></h2>
+  <a class="open-form" href="https://inswitch.com/contact" target="_blank">Abrir formulario →</a>
+  <div class="note">Embedded fintech LATAM (UY-based). Wallet-as-a-Service + payment rails en 25+ países.</div>
+  <div class="fields">
+    <div class="field">
+      <label>Nombre</label>
+      <div class="val" id="is-name">Leonardo Mansilla</div>
+      <button class="copy" data-target="is-name">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Email</label>
+      <div class="val" id="is-email">emanuel@saldoar.com</div>
+      <button class="copy" data-target="is-email">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Empresa</label>
+      <div class="val" id="is-company">Saldoar</div>
+      <button class="copy" data-target="is-company">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Cargo</label>
+      <div class="val" id="is-role">Product Manager</div>
+      <button class="copy" data-target="is-role">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Mensaje</label>
+      <pre class="val" id="is-msg">Hola equipo de Inswitch,
+
+Soy Leonardo, Product Manager en Saldoar — fintech LATAM para envío/intercambio de dinero digital, con transacciones de USD 5 a USD 1.000.
+
+Nos interesa Inswitch por su Wallet-as-a-Service y rieles de pago B2B en 25+ países LATAM. Valoramos modelos transaccionales con identificadores reutilizables, no cuenta-por-usuario. Somos crypto-friendly (stablecoins como balance) y ya tenemos KYC biométrico vía Veriff.
+
+¿Podemos coordinar una llamada de 20-30 minutos para evaluar el fit?
+
+Saludos,
+Leonardo Mansilla
+Product Manager - Saldoar
+emanuel@saldoar.com</pre>
+      <button class="copy" data-target="is-msg">Copiar</button>
+    </div>
+  </div>
+</div>
+
+<!-- PROMETEO -->
+<div class="provider">
+  <h2>7. Prometeo <span class="wave">2da ola</span></h2>
+  <a class="open-form" href="https://prometeoapi.com/contacto/" target="_blank">Abrir formulario →</a>
+  <div class="note">Open banking LATAM (UY). Payouts vía rieles bancarios directos en 10+ países.</div>
+  <div class="fields">
+    <div class="field">
+      <label>Nombre</label>
+      <div class="val" id="pr-name">Leonardo Mansilla</div>
+      <button class="copy" data-target="pr-name">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Email</label>
+      <div class="val" id="pr-email">emanuel@saldoar.com</div>
+      <button class="copy" data-target="pr-email">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Empresa</label>
+      <div class="val" id="pr-company">Saldoar</div>
+      <button class="copy" data-target="pr-company">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Cargo</label>
+      <div class="val" id="pr-role">Product Manager</div>
+      <button class="copy" data-target="pr-role">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Mensaje</label>
+      <pre class="val" id="pr-msg">Hola equipo de Prometeo,
+
+Soy Leonardo, Product Manager en Saldoar — fintech LATAM para envío/intercambio de dinero digital, con transacciones de USD 5 a USD 1.000.
+
+Nos interesa Prometeo como complemento de liquidez vía rieles bancarios directos en 10+ países LATAM. Valoramos modelos transaccionales con identificadores reutilizables. Somos crypto-friendly y ya tenemos KYC biométrico vía Veriff.
+
+¿Podemos coordinar una llamada de 20-30 minutos para explorar la integración?
+
+Saludos,
+Leonardo Mansilla
+Product Manager - Saldoar
+emanuel@saldoar.com</pre>
+      <button class="copy" data-target="pr-msg">Copiar</button>
+    </div>
+  </div>
+</div>
+
+<!-- RETORNA -->
+<div class="provider">
+  <h2>8. Retorna Plataforma <span class="wave">2da ola</span></h2>
+  <a class="open-form" href="https://plataforma.retorna.app/es/plataforma/contactanos" target="_blank">Abrir formulario →</a>
+  <div class="note">Plataforma B2B (banks/fintechs/empresas). 30+ corredores con USDC/USDT explícitos. 95% pagos &lt;30s.</div>
+  <div class="fields">
+    <div class="field">
+      <label>Nombre</label>
+      <div class="val" id="rt-name">Leonardo Mansilla</div>
+      <button class="copy" data-target="rt-name">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Email</label>
+      <div class="val" id="rt-email">emanuel@saldoar.com</div>
+      <button class="copy" data-target="rt-email">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Empresa</label>
+      <div class="val" id="rt-company">Saldoar</div>
+      <button class="copy" data-target="rt-company">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Cargo</label>
+      <div class="val" id="rt-role">Product Manager</div>
+      <button class="copy" data-target="rt-role">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Mensaje</label>
+      <pre class="val" id="rt-msg">Hola equipo de Retorna,
+
+Soy Leonardo, Product Manager en Saldoar — fintech LATAM para envío/intercambio de dinero digital, con transacciones de USD 5 a USD 1.000.
+
+Nos interesa Retorna Plataforma por sus 30+ corredores y soporte explícito de USDC/USDT para repatriación de fondos en emerging markets — un match directo con nuestro modelo crypto-friendly. Valoramos modelos transaccionales con identificadores reutilizables, no cuenta-por-usuario. Ya contamos con KYC biométrico vía Veriff.
+
+¿Podemos coordinar una llamada de 20-30 minutos para evaluar el fit?
+
+Saludos,
+Leonardo Mansilla
+Product Manager - Saldoar
+emanuel@saldoar.com</pre>
+      <button class="copy" data-target="rt-msg">Copiar</button>
+    </div>
+  </div>
+</div>
+
+<!-- YELLOWCARD -->
+<div class="provider">
+  <h2>9. Yellowcard <span class="wave">2da ola</span></h2>
+  <a class="open-form" href="https://yellowcard.io" target="_blank">Abrir yellowcard.io →</a>
+  <div class="note">Re-contacto solicitado por SEO. Liquidez BR/CO/MX vía USDC/USDT. Sin soporte español. Previas meets sin cierre.</div>
+  <div class="fields">
+    <div class="field">
+      <label>Name</label>
+      <div class="val" id="yc-name">Leonardo Mansilla</div>
+      <button class="copy" data-target="yc-name">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Email</label>
+      <div class="val" id="yc-email">emanuel@saldoar.com</div>
+      <button class="copy" data-target="yc-email">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Company</label>
+      <div class="val" id="yc-company">Saldoar</div>
+      <button class="copy" data-target="yc-company">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Role</label>
+      <div class="val" id="yc-role">Product Manager</div>
+      <button class="copy" data-target="yc-role">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Mensaje</label>
+      <pre class="val" id="yc-msg">Hi Yellowcard team,
+
+Following up on our previous conversations earlier this year — I'm Leonardo, Product Manager at Saldoar. We'd like to resume the discussion about your stablecoin liquidity rails (USDC/USDT) for our LATAM operations.
+
+Saldoar is a crypto-friendly LATAM fintech for sending, receiving, and exchanging digital money (transactions USD 5 to USD 1,000). We're particularly interested in your Brazil, Colombia and Mexico coverage, and would love an update on your LATAM Q2 expansion roadmap and current pricing. We already have biometric KYC via Veriff.
+
+Could we re-schedule a 20-30 minute call this or next week?
 
 Best,
 Leonardo Mansilla
 Product Manager - Saldoar
 emanuel@saldoar.com</pre>
-      <button class="copy" data-target="s-msg">Copiar</button>
+      <button class="copy" data-target="yc-msg">Copiar</button>
+    </div>
+  </div>
+</div>
+
+<h2 class="section-title">3era ola — Complementarios (6)</h2>
+
+<!-- THUNES -->
+<div class="provider">
+  <h2>10. Thunes <span class="wave w3">3era ola</span></h2>
+  <a class="open-form" href="https://www.thunes.com/contact-us/" target="_blank">Abrir formulario →</a>
+  <div class="note">Singapur-based, cross-border B2B global. 130+ países, multi-rail. Útil para corredores no-LATAM.</div>
+  <div class="fields">
+    <div class="field">
+      <label>Name</label>
+      <div class="val" id="th-name">Leonardo Mansilla</div>
+      <button class="copy" data-target="th-name">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Email</label>
+      <div class="val" id="th-email">emanuel@saldoar.com</div>
+      <button class="copy" data-target="th-email">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Company</label>
+      <div class="val" id="th-company">Saldoar</div>
+      <button class="copy" data-target="th-company">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Role</label>
+      <div class="val" id="th-role">Product Manager</div>
+      <button class="copy" data-target="th-role">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Website</label>
+      <div class="val" id="th-web">saldoar.com</div>
+      <button class="copy" data-target="th-web">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Mensaje</label>
+      <pre class="val" id="th-msg">Hi Thunes team,
+
+I'm Leonardo, Product Manager at Saldoar — a crypto-friendly LATAM fintech for sending, receiving, and exchanging digital money (transactions USD 5 to USD 1,000).
+
+We're exploring Thunes for cross-border payout corridors complementary to our LATAM-native stack. We particularly value transactional collect-and-pay flows with reusable identifiers, rather than multi-currency per-user account schemes. We already have biometric KYC via Veriff.
+
+Would you have 20-30 minutes this or next week to explore fit?
+
+Best,
+Leonardo Mansilla
+Product Manager - Saldoar
+emanuel@saldoar.com</pre>
+      <button class="copy" data-target="th-msg">Copiar</button>
+    </div>
+  </div>
+</div>
+
+<!-- LIRIUM -->
+<div class="provider">
+  <h2>11. Lirium <span class="wave w3">3era ola</span></h2>
+  <a class="open-form" href="https://lirium.com" target="_blank">Abrir lirium.com →</a>
+  <div class="note">Liechtenstein-based, crypto-fiat B2B white-label para fintechs LATAM. License europea + LATAM rails.</div>
+  <div class="fields">
+    <div class="field">
+      <label>Name</label>
+      <div class="val" id="li-name">Leonardo Mansilla</div>
+      <button class="copy" data-target="li-name">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Email</label>
+      <div class="val" id="li-email">emanuel@saldoar.com</div>
+      <button class="copy" data-target="li-email">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Company</label>
+      <div class="val" id="li-company">Saldoar</div>
+      <button class="copy" data-target="li-company">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Role</label>
+      <div class="val" id="li-role">Product Manager</div>
+      <button class="copy" data-target="li-role">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Mensaje</label>
+      <pre class="val" id="li-msg">Hi Lirium team,
+
+I'm Leonardo, Product Manager at Saldoar — a crypto-friendly LATAM fintech for sending, receiving, and exchanging digital money (transactions USD 5 to USD 1,000).
+
+We're interested in Lirium's white-label crypto-fiat infrastructure with EU compliance for our LATAM operations. Stablecoins (USDC/USDT) sit at the core of our treasury, so your model is a strong match. We already have biometric KYC via Veriff.
+
+Could we set up a 20-30 minute call to explore a partnership?
+
+Best,
+Leonardo Mansilla
+Product Manager - Saldoar
+emanuel@saldoar.com</pre>
+      <button class="copy" data-target="li-msg">Copiar</button>
+    </div>
+  </div>
+</div>
+
+<!-- CONEKTA -->
+<div class="provider">
+  <h2>12. Conekta <span class="wave w3">3era ola</span></h2>
+  <a class="open-form" href="https://conekta.com" target="_blank">Abrir conekta.com →</a>
+  <div class="note">México-only PSP B2B. CLABEs virtuales únicas (textbook reusable identifier). SPEI + cards + OXXO.</div>
+  <div class="fields">
+    <div class="field">
+      <label>Nombre</label>
+      <div class="val" id="ck-name">Leonardo Mansilla</div>
+      <button class="copy" data-target="ck-name">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Email</label>
+      <div class="val" id="ck-email">emanuel@saldoar.com</div>
+      <button class="copy" data-target="ck-email">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Empresa</label>
+      <div class="val" id="ck-company">Saldoar</div>
+      <button class="copy" data-target="ck-company">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Cargo</label>
+      <div class="val" id="ck-role">Product Manager</div>
+      <button class="copy" data-target="ck-role">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Mensaje</label>
+      <pre class="val" id="ck-msg">Hola equipo de Conekta,
+
+Soy Leonardo, Product Manager en Saldoar — fintech LATAM para envío/intercambio de dinero digital, con transacciones de USD 5 a USD 1.000.
+
+Nos interesa Conekta por las CLABEs virtuales únicas y cobertura SPEI/OXXO en México — un fit ideal para identificadores reutilizables. Somos crypto-friendly (stablecoins como balance) y ya tenemos KYC biométrico vía Veriff.
+
+¿Podemos coordinar una llamada de 20-30 minutos con su equipo de sales?
+
+Saludos,
+Leonardo Mansilla
+Product Manager - Saldoar
+emanuel@saldoar.com</pre>
+      <button class="copy" data-target="ck-msg">Copiar</button>
+    </div>
+  </div>
+</div>
+
+<!-- PAYU LATAM -->
+<div class="provider">
+  <h2>13. PayU LATAM <span class="wave w3">3era ola</span></h2>
+  <a class="open-form" href="https://corporate.payu.com" target="_blank">Abrir corporate.payu.com →</a>
+  <div class="note">PSP B2B multi-LATAM, ex-Naspers. Confirmar si soportan modelo wallet/remesa.</div>
+  <div class="fields">
+    <div class="field">
+      <label>Nombre</label>
+      <div class="val" id="py-name">Leonardo Mansilla</div>
+      <button class="copy" data-target="py-name">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Email</label>
+      <div class="val" id="py-email">emanuel@saldoar.com</div>
+      <button class="copy" data-target="py-email">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Empresa</label>
+      <div class="val" id="py-company">Saldoar</div>
+      <button class="copy" data-target="py-company">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Cargo</label>
+      <div class="val" id="py-role">Product Manager</div>
+      <button class="copy" data-target="py-role">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Mensaje</label>
+      <pre class="val" id="py-msg">Hola equipo de PayU,
+
+Soy Leonardo, Product Manager en Saldoar — fintech LATAM para envío/intercambio de dinero digital, con transacciones de USD 5 a USD 1.000.
+
+Nos interesa explorar PayU LATAM por su cobertura regional (AR, BR, CL, CO, MX, PE) y API madura. Valoramos especialmente modelos transaccionales con identificadores reutilizables, no cuenta-por-usuario. Somos crypto-friendly y ya tenemos KYC biométrico vía Veriff.
+
+¿Podemos coordinar una llamada de 20-30 minutos para evaluar el fit con un caso de uso wallet/remesa más que e-commerce tradicional?
+
+Saludos,
+Leonardo Mansilla
+Product Manager - Saldoar
+emanuel@saldoar.com</pre>
+      <button class="copy" data-target="py-msg">Copiar</button>
+    </div>
+  </div>
+</div>
+
+<!-- RAPYD -->
+<div class="provider">
+  <h2>14. Rapyd <span class="wave w3">3era ola</span></h2>
+  <a class="open-form" href="https://www.rapyd.net/contact" target="_blank">Abrir formulario →</a>
+  <div class="note">Global B2B Fintech-as-a-Service. Multi-rail, 100+ países.</div>
+  <div class="fields">
+    <div class="field">
+      <label>Name</label>
+      <div class="val" id="rp-name">Leonardo Mansilla</div>
+      <button class="copy" data-target="rp-name">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Email</label>
+      <div class="val" id="rp-email">emanuel@saldoar.com</div>
+      <button class="copy" data-target="rp-email">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Company</label>
+      <div class="val" id="rp-company">Saldoar</div>
+      <button class="copy" data-target="rp-company">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Role</label>
+      <div class="val" id="rp-role">Product Manager</div>
+      <button class="copy" data-target="rp-role">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Website</label>
+      <div class="val" id="rp-web">saldoar.com</div>
+      <button class="copy" data-target="rp-web">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Mensaje</label>
+      <pre class="val" id="rp-msg">Hi Rapyd team,
+
+I'm Leonardo, Product Manager at Saldoar — a crypto-friendly LATAM fintech for sending, receiving, and exchanging digital money (transactions USD 5 to USD 1,000).
+
+We're exploring Rapyd's multi-rail capabilities for our LATAM expansion and potential global corridors. We particularly value transactional collect-and-pay flows with reusable identifiers, rather than multi-currency per-user account schemes. We already have biometric KYC via Veriff.
+
+Could we set up a 20-30 minute call to discuss fit?
+
+Best,
+Leonardo Mansilla
+Product Manager - Saldoar
+emanuel@saldoar.com</pre>
+      <button class="copy" data-target="rp-msg">Copiar</button>
+    </div>
+  </div>
+</div>
+
+<!-- WISE PLATFORM -->
+<div class="provider">
+  <h2>15. Wise Platform <span class="wave w3">3era ola</span></h2>
+  <a class="open-form" href="https://wise.com/platform" target="_blank">Abrir wise.com/platform →</a>
+  <div class="note">B2B real para banks/fintechs (distinto de Wise Business consumer). Validar específicamente modelo cuenta-única vs cuenta-por-usuario.</div>
+  <div class="fields">
+    <div class="field">
+      <label>Name</label>
+      <div class="val" id="wp-name">Leonardo Mansilla</div>
+      <button class="copy" data-target="wp-name">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Email</label>
+      <div class="val" id="wp-email">emanuel@saldoar.com</div>
+      <button class="copy" data-target="wp-email">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Company</label>
+      <div class="val" id="wp-company">Saldoar</div>
+      <button class="copy" data-target="wp-company">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Role</label>
+      <div class="val" id="wp-role">Product Manager</div>
+      <button class="copy" data-target="wp-role">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Mensaje</label>
+      <pre class="val" id="wp-msg">Hi Wise Platform team,
+
+I'm Leonardo, Product Manager at Saldoar — a crypto-friendly LATAM fintech for sending, receiving, and exchanging digital money (transactions USD 5 to USD 1,000).
+
+We're evaluating Wise Platform as a B2B liquidity partner for our LATAM expansion. Our flow is transactional collect-and-pay (not multi-currency per-user accounts), so we'd like to specifically validate whether Wise Platform supports a single reusable account model identified by transaction ID, plus real coverage and local methods (PIX, SPEI, CBU, PSE) as payout destinations across AR, BR, CO, MX, PE, CL. We already have biometric KYC via Veriff.
+
+Could we set up a 20-30 minute call to explore?
+
+Best,
+Leonardo Mansilla
+Product Manager - Saldoar
+emanuel@saldoar.com</pre>
+      <button class="copy" data-target="wp-msg">Copiar</button>
     </div>
   </div>
 </div>
