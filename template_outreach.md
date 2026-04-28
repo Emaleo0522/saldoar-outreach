@@ -16,7 +16,7 @@ Hola equipo de {Proveedor},
 
 Soy Leonardo, Product Manager en Saldoar.
 
-Saldoar es una empresa de tecnología financiera que permite a miles de latinoamericanos, todos los días, enviar, recibir e intercambiar dinero digital. Como parte de nuestro plan de expansión estamos incorporando nuevos países, con un volumen de transacciones que va de USD 5 a USD 1.000.
+Saldoar es una empresa de tecnología financiera que da servicio a miles de usuarios en América y Europa, todos los días, para enviar, recibir e intercambiar dinero digital. Operamos con tickets que arrancan desde USD 1 en ciertos corredores y escalan hasta operaciones de alto valor, según el flujo.
 
 Nos interesa explorar su servicio para integrar payin y payout vía API en múltiples países. Valoramos especialmente modelos basados en identificadores reutilizables (QR, virtual accounts, etc.) que encajen con un flujo transaccional de cobros y pagos, más que esquemas de cuentas multimoneda por usuario final.
 
@@ -41,7 +41,7 @@ Hi {Provider} team,
 
 I'm Leonardo, Product Manager at Saldoar.
 
-Saldoar is a financial technology company that enables thousands of Latin Americans every day to send, receive, and exchange digital money. As part of our expansion plan we are onboarding new countries, with transactions ranging from USD 5 to USD 1,000.
+Saldoar is a financial technology company serving thousands of users across the Americas and Europe every day, sending, receiving, and exchanging digital money. Our ticket sizes range from USD 1 in certain corridors up to high-value operations, depending on the flow.
 
 We'd love to explore your service for payin and payout integration via API across multiple countries. We particularly value models based on reusable identifiers (QR, virtual accounts, etc.) that fit a transactional collect-and-pay flow, rather than multi-currency per-user account schemes.
 
@@ -61,6 +61,7 @@ emanuel@saldoar.com
 
 1. ✅ Asunto claro con nombre de país/región.
 2. ✅ Presentación personal al inicio ("Soy Leonardo, PM en Saldoar").
-3. ✅ Mención de "volumen mensual relevante" — señal de escala.
-4. ✅ Call to action explícito — llamada de 20-30 min con disponibilidad.
-5. ✅ Firma completa con rol, empresa y email corporativo.
+3. ✅ Perfil de Saldoar actualizado: usuarios en América y Europa (no solo LATAM).
+4. ✅ Volumetría sin tope superior — desde USD 1 hasta operaciones de alto valor según corredor.
+5. ✅ Call to action explícito — llamada de 20-30 min con disponibilidad.
+6. ✅ Firma completa con rol, empresa y email corporativo.
