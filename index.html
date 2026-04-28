@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Outreach forms — Saldoar</title>
+<style>
+  * { box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  body {
+    margin: 0;
+    padding: 24px 16px 80px;
+    background: #f5f6f8;
+    color: #1a1a1a;
+    max-width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+  }
+  h1 { color: #10b981; margin: 0 0 6px; font-size: 1.7rem; }
+  .lead { color: #666; margin-bottom: 22px; font-size: 0.95rem; }
+  .provider {
+    background: #fff;
+    border-radius: 12px;
+    padding: 22px 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  }
+  .provider h2 {
+    margin: 0 0 4px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .wave {
+    display: inline-block;
+    background: #d1fae5;
+    color: #065f46;
+    font-size: 0.72rem;
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-weight: 600;
+    vertical-align: middle;
+  }
+  .wave.w2 { background: #fef3c7; color: #92400e; }
+  .open-form {
+    display: inline-block;
+    background: #10b981;
+    color: #fff;
+    padding: 9px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 8px 0 14px;
+  }
+  .open-form:hover { background: #059669; }
+  .fields { display: grid; gap: 10px; margin-top: 6px; }
+  .field {
+    display: grid;
+    grid-template-columns: 140px 1fr auto;
+    gap: 8px;
+    align-items: flex-start;
+  }
+  .field label {
+    font-size: 0.82rem;
+    color: #555;
+    font-weight: 600;
+    padding-top: 10px;
+  }
+  .field .val {
+    border: 1px solid #e4e7eb;
+    border-radius: 7px;
+    padding: 9px 12px;
+    background: #f9fafb;
+    font-size: 0.88rem;
+    color: #1a1a1a;
+    word-break: break-word;
+  }
+  .field textarea.val {
+    min-height: 180px;
+    font-family: inherit;
+    white-space: pre-wrap;
+    resize: vertical;
+    width: 100%;
+  }
+  button.copy {
+    border: 1px solid #10b981;
+    color: #10b981;
+    background: #fff;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    cursor: pointer;
+    height: 36px;
+  }
+  button.copy:hover { background: #10b981; color: #fff; }
+  button.copy.done { background: #10b981; color: #fff; }
+  .note {
+    background: #fefce8;
+    border-left: 3px solid #facc15;
+    padding: 9px 12px;
+    font-size: 0.83rem;
+    border-radius: 5px;
+    color: #713f12;
+    margin-top: 12px;
+  }
+  .info {
+    background: #eff6ff;
+    border-left: 3px solid #2563eb;
+    padding: 9px 12px;
+    font-size: 0.83rem;
+    border-radius: 5px;
+    color: #1e40af;
+    margin-bottom: 18px;
+  }
+  .fields .full {
+    grid-column: 1 / -1;
+  }
+  pre.val { margin: 0; font-family: inherit; white-space: pre-wrap; }
+</style>
+</head>
+<body>
+
+<h1>Outreach forms — 1era ola</h1>
+<div class="lead">6 providers listos para contactar. Abrí cada form, copiá los campos y enviá.</div>
+
+<div class="info">
+  <b>Flujo:</b> hacé clic en "Abrir formulario" → copiá cada campo con el botón "Copiar" → pegalo en el campo correspondiente del form → enviá → marcá el provider como <code>contacted</code> en Notion con la fecha.
+</div>
+
+<!-- LOCALPAYMENT -->
+<div class="provider">
+  <h2>1. LocalPayment (Aleph) <span class="wave">1era ola</span></h2>
+  <a class="open-form" href="https://localpayment.com/#form" target="_blank">Abrir formulario →</a>
+  <div class="note">Form con dropdown — elegí <b>"Sales"</b>. Tiene hCaptcha: vas a tener que resolverlo al enviar.</div>
+  <div class="fields">
+    <div class="field">
+      <label>Nombre</label>
+      <div class="val" id="lp-name">Leonardo Mansilla</div>
+      <button class="copy" data-target="lp-name">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Email</label>
+      <div class="val" id="lp-email">emanuel@saldoar.com</div>
+      <button class="copy" data-target="lp-email">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Empresa</label>
+      <div class="val" id="lp-company">Saldoar</div>
+      <button class="copy" data-target="lp-company">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Cargo</label>
+      <div class="val" id="lp-role">Product Manager</div>
+      <button class="copy" data-target="lp-role">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Mensaje</label>
+      <pre class="val" id="lp-msg">Hola equipo de LocalPayment,
+
+Soy Leonardo, Product Manager en Saldoar.
+
+Saldoar es una empresa de tecnología financiera que permite a miles de latinoamericanos, todos los días, enviar, recibir e intercambiar dinero digital. Como parte de nuestro plan de expansión estamos incorporando nuevos países, con un volumen de transacciones que va de USD 5 a USD 1.000.
+
+Nos interesa explorar su servicio para integrar payin y payout vía API en múltiples países —nos atrae especialmente la amplitud de cobertura LATAM que ofrecen (17 países). Valoramos modelos basados en identificadores reutilizables (QR, virtual accounts, etc.) que encajen con un flujo transaccional de cobros y pagos, más que esquemas de cuentas multimoneda por usuario final.
+
+En Saldoar somos crypto-friendly: valoramos cripto y stablecoins como moneda base de balance, lo que nos da flexibilidad para integrarnos con proveedores que operen en FIAT, cripto o ambos. Adicionalmente, ya contamos con un proceso de KYC biométrico vía Veriff.
+
+¿Podríamos coordinar una llamada de 20-30 minutos esta semana o la próxima?
+
+Saludos,
+Leonardo Mansilla
+Product Manager - Saldoar
+emanuel@saldoar.com</pre>
+      <button class="copy" data-target="lp-msg">Copiar</button>
+    </div>
+  </div>
+</div>
+
+<!-- BAMBOO -->
+<div class="provider">
+  <h2>2. Bamboo Payments <span class="wave">1era ola</span></h2>
+  <a class="open-form" href="https://bamboopaymentsystems.com/contact-sales/" target="_blank">Abrir formulario →</a>
+  <div class="fields">
+    <div class="field">
+      <label>Nombre</label>
+      <div class="val" id="bb-name">Leonardo Mansilla</div>
+      <button class="copy" data-target="bb-name">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Email</label>
+      <div class="val" id="bb-email">emanuel@saldoar.com</div>
+      <button class="copy" data-target="bb-email">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Empresa</label>
+      <div class="val" id="bb-company">Saldoar</div>
+      <button class="copy" data-target="bb-company">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Cargo</label>
+      <div class="val" id="bb-role">Product Manager</div>
+      <button class="copy" data-target="bb-role">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Website</label>
+      <div class="val" id="bb-web">saldoar.com</div>
+      <button class="copy" data-target="bb-web">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Mensaje</label>
+      <pre class="val" id="bb-msg">Hi Bamboo team,
+
+I'm Leonardo, Product Manager at Saldoar.
+
+Saldoar is a financial technology company that enables thousands of Latin Americans every day to send, receive, and exchange digital money. As part of our expansion plan we are onboarding new countries, with transactions ranging from USD 5 to USD 1,000.
+
+We'd love to explore your service for payin and payout integration via API across multiple countries — we're particularly drawn by your 7-country LATAM coverage (including Uruguay), 24/7 real-time processing and your recent EU license. We particularly value models based on reusable identifiers (QR, virtual accounts, etc.) that fit a transactional collect-and-pay flow, rather than multi-currency per-user account schemes.
+
+At Saldoar we are crypto-friendly: we value crypto and stablecoins as a base balance currency, which gives us flexibility to integrate with providers operating in FIAT, crypto, or both. We also already have a biometric KYC process in place via Veriff.
+
+Would you have availability for a 20-30 minute call this or next week?
+
+Best,
+Leonardo Mansilla
+Product Manager - Saldoar
+emanuel@saldoar.com</pre>
+      <button class="copy" data-target="bb-msg">Copiar</button>
+    </div>
+  </div>
+</div>
+
+<!-- KOYWE -->
+<div class="provider">
+  <h2>3. Koywe <span class="wave">1era ola</span></h2>
+  <a class="open-form" href="https://koywe.com/es/book-demo" target="_blank">Abrir "Agendar demo" →</a>
+  <div class="note">Koywe solo tiene booking de demo (no form de partnership). En el campo de "qué te interesa" o "mensaje" pegá el texto de abajo.</div>
+  <div class="fields">
+    <div class="field">
+      <label>Nombre</label>
+      <div class="val" id="kw-name">Leonardo Mansilla</div>
+      <button class="copy" data-target="kw-name">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Email</label>
+      <div class="val" id="kw-email">emanuel@saldoar.com</div>
+      <button class="copy" data-target="kw-email">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Empresa</label>
+      <div class="val" id="kw-company">Saldoar</div>
+      <button class="copy" data-target="kw-company">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Mensaje</label>
+      <pre class="val" id="kw-msg">Hola equipo de Koywe,
+
+Soy Leonardo, Product Manager en Saldoar — una fintech LATAM de envío/intercambio de dinero digital, con transacciones que van de USD 5 a USD 1.000.
+
+Nos interesa Koywe por su modelo de KYC delegable al merchant, sus stablecoins nativas (USDC/USDT) y su licencia CMF. Valoramos modelos basados en identificadores reutilizables (QR, virtual accounts) que encajen con un flujo transaccional de cobros y pagos, más que esquemas de cuentas multimoneda por usuario final.
+
+En Saldoar somos crypto-friendly: valoramos cripto y stablecoins como moneda base de balance, lo que nos da flexibilidad para integrarnos en FIAT, cripto o ambos. Ya contamos con KYC biométrico propio vía Veriff.
+
+Agradecería una demo o reunión de 20-30 minutos para explorar el fit.
+
+Saludos,
+Leonardo Mansilla
+Product Manager - Saldoar
+emanuel@saldoar.com</pre>
+      <button class="copy" data-target="kw-msg">Copiar</button>
+    </div>
+  </div>
+</div>
+
+<!-- WISE -->
+<div class="provider">
+  <h2>4. Wise Business <span class="wave">1era ola</span></h2>
+  <a class="open-form" href="https://wise.com/gb/business/contact" target="_blank">Abrir formulario →</a>
+  <div class="fields">
+    <div class="field">
+      <label>Nombre</label>
+      <div class="val" id="w-name">Leonardo Mansilla</div>
+      <button class="copy" data-target="w-name">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Email</label>
+      <div class="val" id="w-email">emanuel@saldoar.com</div>
+      <button class="copy" data-target="w-email">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Empresa</label>
+      <div class="val" id="w-company">Saldoar</div>
+      <button class="copy" data-target="w-company">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Cargo</label>
+      <div class="val" id="w-role">Product Manager</div>
+      <button class="copy" data-target="w-role">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Mensaje</label>
+      <pre class="val" id="w-msg">Hi Wise Business team,
+
+I'm Leonardo, Product Manager at Saldoar — a fintech that enables thousands of Latin Americans to send, receive, and exchange digital money daily. As part of our expansion plan we're onboarding new countries, with transactions ranging from USD 5 to USD 1,000.
+
+We'd love to explore Wise Business as a liquidity partner for our expansion across LATAM. We particularly value models based on reusable identifiers (QR, virtual accounts, etc.) that fit a transactional collect-and-pay flow, rather than multi-currency per-user account schemes.
+
+At Saldoar we are crypto-friendly: we value crypto and stablecoins as a base balance currency, which gives us flexibility to integrate with providers operating in FIAT, crypto, or both. We also already have a biometric KYC process in place via Veriff.
+
+Would you have 20-30 minutes this or next week to discuss fit?
+
+Best,
+Leonardo Mansilla
+Product Manager - Saldoar
+emanuel@saldoar.com</pre>
+      <button class="copy" data-target="w-msg">Copiar</button>
+    </div>
+  </div>
+</div>
+
+<!-- MERCADOPAGO -->
+<div class="provider">
+  <h2>5. MercadoPago <span class="wave">1era ola</span></h2>
+  <a class="open-form" href="https://centrodepartners.mercadolibre.com.ar" target="_blank">Abrir Centro de Partners →</a>
+  <div class="note">MP no tiene un form directo de contacto comercial. Opciones: (1) registrarte en Centro de Partners, (2) sumarte al Discord oficial. La comunicación inicial puede ser menos formal.</div>
+  <div class="fields">
+    <div class="field">
+      <label>Mensaje (Discord o form)</label>
+      <pre class="val" id="mp-msg">Hola equipo de MercadoPago Developers,
+
+Soy Leonardo, Product Manager en Saldoar — una fintech LATAM que permite enviar, recibir e intercambiar dinero digital, con transacciones que van de USD 5 a USD 1.000.
+
+Estamos explorando MercadoPago como proveedor de liquidez regional por su cobertura en 18 países. Valoramos modelos basados en identificadores reutilizables (QR, virtual accounts, etc.) que encajen con un flujo transaccional de cobros y pagos, más que esquemas de cuentas multimoneda por usuario final.
+
+En Saldoar somos crypto-friendly: valoramos cripto y stablecoins como moneda base de balance, con flexibilidad para integrarnos en FIAT, cripto o ambos. Ya contamos con KYC biométrico propio vía Veriff.
+
+¿A quién podría contactar del lado comercial/partnerships para agendar una llamada inicial?
+
+Saludos,
+Leonardo Mansilla
+Product Manager - Saldoar
+emanuel@saldoar.com</pre>
+      <button class="copy" data-target="mp-msg">Copiar</button>
+    </div>
+  </div>
+</div>
+
+<!-- STRIPE -->
+<div class="provider">
+  <h2>6. Stripe Connect <span class="wave">1era ola</span></h2>
+  <a class="open-form" href="https://stripe.com/contact/sales" target="_blank">Abrir Stripe Sales →</a>
+  <div class="note">Stripe tiene un flujo de contacto por producto. Elegí "Connect" si el form lo permite.</div>
+  <div class="fields">
+    <div class="field">
+      <label>Nombre</label>
+      <div class="val" id="s-name">Leonardo Mansilla</div>
+      <button class="copy" data-target="s-name">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Email</label>
+      <div class="val" id="s-email">emanuel@saldoar.com</div>
+      <button class="copy" data-target="s-email">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Empresa</label>
+      <div class="val" id="s-company">Saldoar</div>
+      <button class="copy" data-target="s-company">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Website</label>
+      <div class="val" id="s-web">saldoar.com</div>
+      <button class="copy" data-target="s-web">Copiar</button>
+    </div>
+    <div class="field">
+      <label>Mensaje</label>
+      <pre class="val" id="s-msg">Hi Stripe Sales team,
+
+I'm Leonardo, Product Manager at Saldoar — a LATAM fintech for sending, receiving, and exchanging digital money. As part of our expansion plan we're onboarding new countries, with transactions ranging from USD 5 to USD 1,000.
+
+We're exploring Stripe Connect for payin and payout across our target markets. We particularly value models based on reusable identifiers (QR, virtual accounts, etc.) that fit a transactional collect-and-pay flow, rather than multi-currency per-user account schemes.
+
+At Saldoar we are crypto-friendly: we value crypto and stablecoins as a base balance currency, which gives us flexibility to integrate with providers operating in FIAT, crypto, or both. We also already have a biometric KYC process in place via Veriff.
+
+Could we set up a 20-30 min call to explore a fit? Particularly interested in Connect Custom and LATAM coverage specifics.
+
+Best,
+Leonardo Mansilla
+Product Manager - Saldoar
+emanuel@saldoar.com</pre>
+      <button class="copy" data-target="s-msg">Copiar</button>
+    </div>
+  </div>
+</div>
+
+<script>
+document.querySelectorAll('button.copy').forEach(btn => {
+  btn.addEventListener('click', async () => {
+    const target = document.getElementById(btn.dataset.target);
+    const text = target.innerText || target.textContent;
+    try {
+      await navigator.clipboard.writeText(text);
+      const prev = btn.textContent;
+      btn.textContent = 'Copiado ✓';
+      btn.classList.add('done');
+      setTimeout(() => { btn.textContent = prev; btn.classList.remove('done'); }, 1400);
+    } catch (e) {
+      const r = document.createRange();
+      r.selectNode(target);
+      window.getSelection().removeAllRanges();
+      window.getSelection().addRange(r);
+      document.execCommand('copy');
+      window.getSelection().removeAllRanges();
+      btn.textContent = 'Copiado ✓';
+      setTimeout(() => { btn.textContent = 'Copiar'; }, 1400);
+    }
+  });
+});
+</script>
+
+</body>
+</html>
