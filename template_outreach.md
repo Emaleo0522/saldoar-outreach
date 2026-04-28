@@ -60,7 +60,7 @@ emanuel@saldoar.com
 ## Cambios aplicados vs. versión original
 
 1. ✅ Asunto claro con nombre de país/región.
-2. ✅ Presentación personal al inicio ("Soy Emanuel, PM en Saldoar").
+2. ✅ Presentación personal al inicio ("Soy Leonardo, PM en Saldoar").
 3. ✅ Mención de "volumen mensual relevante" — señal de escala.
 4. ✅ Call to action explícito — llamada de 20-30 min con disponibilidad.
 5. ✅ Firma completa con rol, empresa y email corporativo.
